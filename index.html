@@ -11,36 +11,36 @@
   </head>
   <body>
     <script>
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init();
     </script>
     <div id="overlay"></div>
     <div class="background-image"></div>
 
     <div class="full-screen">
       <div class="screen1">
-        <div class="welcome-text">
+        <div class="welcome-text" data-aos="fade-in" data-aos-duration="2000">
           Welcome to heis.
         </div>
       </div>
       <div class="screen2">
         <div class="placeholder"></div>
         <div class="screen2-title">
-          A new type of app.
+          A different kind of app.
         </div>
         <div class="screen2-content">
           <div class="text-container">
             <div class="about-text-main">
-              heis is a competitive, location-based experience that lets you hang out with friends and get a workout.
+              heis is a competitive, location-based experience that lets you (finally) get out of the house, hang with friends, and get a workout.
               <br></br>
-              And you won't even need to put down your phone.
+              Oh, and you don't even need to put down your phone.
               <br></br>
             </div>
             <div class="about-text-secondary">
               We're in private beta right now.
             </div>
-            <div id="about-button" data-aos="flip-down">Join Us</div>
+            <a href="./join.html" id="about-button" data-aos="flip-down" data-aos-duration="3000">
+              Join Us
+            </a>
           </div>
           <div class="image-format" data-aos="fade-left">
             <img src="./images/runners.png" alt="Opponents Running" class="image-class">
@@ -52,7 +52,7 @@
       <div class="screen3">
         <div class="placeholder"></div>
         <div class="screen3-title" data-aos="fade-in">
-          Are you up for the challenge?
+          Are you ready for it?
         </div>
         <div class="screen3-content">
           <div class="text-container">
@@ -63,15 +63,15 @@
             <div class="story-text-secondary">
               The stakes have never been higher to capture, or evade.
             </div>
-            <div id="story-button" data-aos="flip-down">Read the Story</div>
+            <div id="story-button" data-aos="flip-down" data-aos-duration="3000">Read the Story</div>
           </div>
         </div>
         <div class="placeholder"></div>
       </div>
 
       <div class="screen4">
-        <div class="contact-text">
-          Questions? Ask us at temp@heis.io
+        <div class="contact-text" data-aos-offset="30" data-aos="fade-in" data-aos-duration="2000">
+          Questions? Ask us at hello@heis.io
         </div>
       </div>
     </div>

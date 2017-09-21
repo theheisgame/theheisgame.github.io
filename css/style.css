@@ -2,7 +2,7 @@ body {
   margin: 0px 0px;
   font-family: "Work Sans", sans-serif;
   font-size: 14pt;
-  color: white;
+  color: #ededef;
   width: 100vw;
   height: 100vh;
 }
@@ -13,13 +13,13 @@ body {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: rgba(4, 2, 39, .8);
+  background-color: rgba(4, 2, 39, .75);
   z-index: 1;
 }
 
 .background-image {
-  -webkit-filter: blur(5px) brightness(.75);
-  filter: blur(5px) brightness(.75);
+  -webkit-filter: blur(5px) brightness(.9);
+  filter: blur(5px) brightness(.9);
   background: url("../images/gmap.jpg") repeat center center fixed;
   position: fixed;
   background-attachment: fixed;
@@ -34,18 +34,196 @@ body {
   -o-background-size: cover;
 }
 
-.screen {
+.full-screen {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: 300vh;
+  width: 100vw;
   overflow: scroll;
 }
 
+.screen1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .welcome-text {
-  font-size: 50pt;
+  font-size: 8vw;
   z-index: 2;
+  text-align: center;
+}
+
+.screen2 {
+  z-index: 3;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ededef;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.placeholder {
+  flex: .5;
+}
+
+.screen2-title {
+  color: #752424;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.screen2-content {
+  z-index: 4;
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  flex: 3;
+  margin: 20px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-text-main {
+  color: #4d4d51;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.about-text-secondary {
+  color: #4d4d51;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.about-button {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 100ms;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 3px;
+  border: 1px solid #752424;
+  font-size: 2vw;
+  color: #752424; }
+
+.about-button:hover {
+  transform: scale(1.05, 1.05);
+  transform-origin: center;
+}
+
+.image-format {
+  flex: 2;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.image-class {
+  max-width: 100%;
+}
+
+.screen3 {
+  z-index: 3;
+  height: 70vh;
+  width: 100vw;
+  background-color: #4d4d51;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.screen3-title {
+  color: #6b75c4;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.screen3-content {
+  z-index: 4;
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-text-main {
+  color: #ededef;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.story-text-secondary {
+  color: #ededef;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.story-button {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 100ms;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 3px;
+  border: 1px solid #6b75c4;
+  font-size: 2vw;
+  color: #6b75c4; }
+
+.story-button:hover {
+  transform: scale(1.05, 1.05);
+  transform-origin: center;
+}
+
+.screen4 {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  font-size: 3vw;
+  z-index: 2;
+  text-align: center;
 }

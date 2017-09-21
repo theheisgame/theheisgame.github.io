@@ -4,18 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <title>Heis</title>
   </head>
   <body>
+    <script>
+    AOS.init({
+      duration: 1000,
+    });
+    </script>
     <div id="overlay"></div>
     <div class="background-image"></div>
 
-    <div class="screen">
-      <div class="welcome-text">
-        Welcome to heis.
+    <div class="full-screen">
+      <div class="screen1">
+        <div class="welcome-text">
+          Welcome to heis.
+        </div>
       </div>
-    <div>
+      <div class="screen2">
+        <div class="placeholder"></div>
+        <div class="screen2-title">
+          A new type of app.
+        </div>
+        <div class="screen2-content">
+          <div class="text-container">
+            <div class="about-text-main">
+              heis is a competitive, location-based experience that lets you hang out with friends and get a workout.
+              <br></br>
+              And you won't even need to set down your phone.
+              <br></br>
+            </div>
+            <div class="about-text-secondary">
+              We're in private beta right now.
+            </div>
+            <div class="about-button" data-aos="flip-down">Join Us</div>
+          </div>
+          <div class="image-format" data-aos="fade-left">
+            <img src="./images/runners.png" alt="Opponents Running" class="image-class">
+          </div>
+        </div>
+        <div class="placeholder"></div>
+      </div>
 
+      <div class="screen3">
+        <div class="placeholder"></div>
+        <div class="screen3-title" data-aos="fade-in">
+          Are you up for the challenge?
+        </div>
+        <div class="screen3-content">
+          <div class="text-container">
+            <div class="story-text-main">
+              The Traitors have fled to the capital. The Tracers have no choice but to attempt to stop them.
+              <br></br>
+            </div>
+            <div class="story-text-secondary">
+              The stakes have never been higher to capture, or evade.
+            </div>
+            <div class="story-button" data-aos="flip-down">Read the Intro</div>
+          </div>
+        </div>
+        <div class="placeholder"></div>
+      </div>
+
+      <div class="screen4">
+        <div class="contact-text">
+          Questions? Ask us at temp@heis.io
+        </div>
+      </div>
+    </div>
   </body>
 </html>

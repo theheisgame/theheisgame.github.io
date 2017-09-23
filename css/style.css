@@ -246,9 +246,7 @@ body {
   align-items: space-around;
 }
 
-
 .screen-join-title {
-  /*color: #6b75c4;*/
   z-index: 5;
   flex: 2;
   display: flex;
@@ -279,7 +277,6 @@ body {
   font-size: 1.5vw;
   text-align: center;
 }
-
 
 #join-button {
   text-decoration: none;
@@ -312,6 +309,74 @@ body {
 }
 
 .contact-text-join {
+  color: #4d4d51;
+  font-size: 2.5vw;
+  z-index: 2;
+  text-align: center;
+}
+
+
+.full-screen-story {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 130vh;*/
+  /*width: 100vw;*/
+  overflow: scroll;
+}
+
+.screen-story {
+  z-index: 3;
+  /*height: 100vh;*/
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.screen-story-title {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 600;
+  padding: 60px 0px 30px 0px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.screen-story-content {
+  padding: 30px 50px 50px 50px;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-story-text-main {
+  font-family: 'Anonymous Pro', monospace;
+  color: #ededef;
+  font-size: 1.7vw;
+  line-height: 160%;
+  text-align: left;
+}
+
+.screen-contact-story {
+  background-color: #ededef;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.contact-text-story {
   color: #4d4d51;
   font-size: 2.5vw;
   z-index: 2;
